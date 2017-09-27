@@ -29,7 +29,7 @@ export default {
     },
     methods: {
         addCount() {
-            this.$store.dispatch('getIndexCount')
+            this.$store.dispatch('getIndexCount');
         }
     }
 }
