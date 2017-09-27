@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import store from './../../store'
 
 import './../../assets/css/index.css'
 import './../../assets/js/test.js'
@@ -11,5 +12,6 @@ import './../../assets/js/test.js'
 // })
 
 new Vue({
+  store,
   render: h => h(App)
 }).$mount('#app')

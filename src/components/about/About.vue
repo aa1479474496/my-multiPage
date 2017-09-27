@@ -8,6 +8,7 @@
         <div style="background:#000">
             <i class="needle-icon"></i>
         </div>
+        <h1>index-vuex模块中的count &nbsp;&nbsp;&nbsp;&nbsp;{{indexCount}}</h1>
         <vfoot></vfoot>
     </div>
 </template>
@@ -25,6 +26,7 @@ export default {
     computed: {
         ...mapState({
            indexName: state => state.index.name,
+           indexCount: state => state.index.count
         }),
         ...mapGetters({
             products: 'getAboutName',
